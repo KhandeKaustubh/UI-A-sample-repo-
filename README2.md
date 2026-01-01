@@ -1,18 +1,5 @@
 # Heading 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Heading 2
 
 ### Heading 3
@@ -30,8 +17,4 @@ System.out.println(a+b);
 
 ```
 
-![W3 Schools CSS](https://logospng.org/wp-content/uploads/w3schools.png)
-
-
-
-
+![W3 Schools CSS](images/Linux-Distributions.png)
