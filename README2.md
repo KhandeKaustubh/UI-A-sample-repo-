@@ -2,8 +2,11 @@
 ## Heading 2
 ### Heading 3
 **Bold text**
+
 *Italic text*
+
 `Inline code`
+
 ```
 int a=0;
 int b=3;
