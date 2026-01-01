@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: green;">Customer Registration Successful!</h2>
+        <p><strong>Customer ID:</strong> <span id="customerId"></span></p>
+        <p><strong>Name:</strong> <span id="customerName"></span></p>
+        <p>Redirecting to login page in <span id="countdown">5</span> seconds...</p>
+        <a href="login.html">Go to Login Page</a>
+    </div>
+
+    <script>
+        let params = new URLSearchParams(window.location.search);
+        document.getElementById("customerId").innerText = params.get("customerId");
+        document.getElementById("customerName").innerText = params.get("name");
+
+        let countdown = 5;
+        let countdownElement = document.getElementById("countdown");
+
+        let timer = setInterval(() => {
+            countdown--;
+            countdownElement.innerText = countdown;
+
+            if (countdown === 0) {
+                clearInterval(timer);
+                window.location.href = "login.html"; // Redirect to login page after countdown
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

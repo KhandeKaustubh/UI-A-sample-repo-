@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Withdraw Money</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Withdraw Money</h2>
+        <form id="withdrawForm">
+            <input type="text" id="customerId" placeholder="Customer ID" required>
+            <button type="button" onclick="fetchBalance()">Check Balance</button>
+            <p id="currentBalance">Current Balance: ₹0</p>
+
+            <input type="number" id="withdrawAmount" placeholder="Enter Withdrawal Amount" required>
+            <button type="submit">Withdraw</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

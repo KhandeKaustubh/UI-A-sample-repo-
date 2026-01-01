@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Customer Login</h2>
+        <form id="loginForm">
+            <label for="customerId">Customer Account Number:</label>
+            <input type="text" id="customerId" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Success message (Initially hidden) -->
+        <p id="successMessage" class="success-message" style="display: none;">Customer login successful!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
